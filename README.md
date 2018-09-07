@@ -1,17 +1,19 @@
 # Compound_Protein_Interaction
 
-The code for "Compound-protein Interaction Prediction with End-to-end Learning of Neural Networks for Graphs and Sequence" (Bioinformatics, 2018).
+The code for "Compound-protein Interaction Prediction
+with End-to-end Learning of Neural Networks for Graphs and Sequence" (Bioinformatics, 2018).
 
-The code provides two major functions:
+The code provides two major scripts:
 
-- code/preprocess_data.sh creates the input data of compound protein interactions
-(see dataset/sample/original).
+- code/preprocess_data.sh creates the input data of compound protein interaction
+(see dataset/sample/original.smiles_sequence_interaction.txt).
 - code/run_training.sh trains a neural network to predict the compound protein interaction
-using the preprocessed input data.
+using the above created input data.
 
 The following paper describes the details of the neural network:
 
 [Compound-protein Interaction Prediction with End-to-end Learning of Neural Networks for Graphs and Sequences](https://academic.oup.com/bioinformatics/advance-article-abstract/doi/10.1093/bioinformatics/bty535/5050020?redirectedFrom=PDF)
+
 
 ## Requirement
 
@@ -37,3 +39,8 @@ In the directory of dataset/sample/original, we have smiles_sequence_interaction
 For other data of compound protein interaction,
 if you prepare the data with the same format as smiles_sequence_interaction.txt in a new directory,
 you can train a neural network by run preprocess_data.sh and run_training.sh.
+
+
+## Future work
+
+- Provide a pre-trained model with a large dataset.
