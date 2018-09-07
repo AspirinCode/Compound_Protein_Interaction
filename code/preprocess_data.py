@@ -47,7 +47,7 @@ def make_adjalist(mol):
 
 def Weisfeiler_Lehman(atom_list, i_jbond_dict, radius):
     """Extract the r-radius vertices and r-radius edges
-    from a graph with WeisfeilerLehman-like algorithm."""
+    from a graph using WeisfeilerLehman-like algorithm."""
 
     if (radius == 0):
         vertex_list = atom_list

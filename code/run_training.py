@@ -135,7 +135,7 @@ class Tester(object):
         if (epoch == 1):
             f = open(file_result, 'w')
             f.write('Epoch\tLoss\tAUC_dev\t' +
-                              'AUC_test\tPrecision\tRecall\n')
+                    'AUC_test\tPrecision\tRecall\n')
         else:
             f = open(file_result, 'a')
         result = map(str, [epoch, loss, auc_dev, auc_test, precision, recall])
