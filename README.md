@@ -5,9 +5,9 @@ with End-to-end Learning of Neural Networks for Graphs and Sequence" (Bioinforma
 
 The code provides two major scripts:
 
-- code/preprocess_data.sh creates the input data of compound protein interaction
-(see dataset/sample/original.smiles_sequence_interaction.txt).
-- code/run_training.sh trains a neural network to predict the compound protein interaction
+- code/preprocess_data.py creates the input data of compound-protein interaction
+(see dataset/sample/original/smiles_sequence_interaction.txt).
+- code/run_training.py trains a neural network to predict the compound-protein interaction
 using the above created input data.
 
 The following paper describes the details of the neural network:
@@ -23,22 +23,25 @@ The code requires:
 - scikit-learn
 - RDKit
 
-To create the input data for a neural network, run the code as follows:
+(i) To create the input data, run the code as follows:
 ```bash
 cd code
 bash preprocess_data.sh
 ```
 
-Then, to train a neural network with the preprocessed data, run the code as follows:
+(ii) Then, to train a neural network with the preprocessed data, run the code as follows:
 ```bash
 bash run_training.sh
 ```
 
-## Train your data of compound protein interaction
-In the directory of dataset/sample/original, we have smiles_sequence_interaction.txt.
-For other data of compound protein interaction,
-if you prepare the data with the same format as smiles_sequence_interaction.txt in a new directory,
-you can train a neural network by run preprocess_data.sh and run_training.sh.
+You can change the hyperparameters in preprocess_data.sh and run_training.sh.
+
+
+## Train your data of compound-protein interaction
+In the directory of dataset/sample/original/, we have "smiles_sequence_interaction.txt."
+If you prepare the other data with the same format as "smiles_sequence_interaction.txt"
+in a new directory (e.g., dataset/yourdata/original/),
+you can train a neural network by (i) run preprocess_data.sh and (ii) run_training.sh.
 
 
 ## Future work
