@@ -41,7 +41,7 @@ You can change the hyperparameters in preprocess_data.sh and run_training.sh.
 In the directory of dataset/sample/original/, we have "smiles_sequence_interaction.txt."
 In this file, 1 means that the compound-protein pair interacts
 and 0 means that the compound-protein pair does not interact.
-If you prepare the other data with the same format as "smiles_sequence_interaction.txt"
+If you prepare your data with the same format as "smiles_sequence_interaction.txt"
 in a new directory (e.g., dataset/yourdata/original/),
 you can train a neural network by (i) run preprocess_data.sh and (ii) run_training.sh.
 
